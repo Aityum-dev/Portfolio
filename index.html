@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aityum - Portfolio</title>
+    <title>Aiman - Portfolio</title>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
@@ -14,7 +14,7 @@
 <body>
     <header>
         <nav class="container">
-            <div class="logo">Aityum</div>
+            <div class="logo">Aiman</div>
             <ul class="nav-links">
                 <li><a href="#about">À propos</a></li>
                 <li><a href="#skills">Compétences</a></li>
@@ -29,7 +29,7 @@
     <main>
         <section class="hero">
             <div class="container">
-                <h1>Aityum</h1>
+                <h1>Aiman</h1>
                 <p class="subtitle">Développeur Web & Étudiant en Informatique</p>
                 <p class="hero-description">
                     Passionné par le développement web et la création d'expériences interactives,
@@ -48,22 +48,20 @@
             <div class="about-content">
                 <div class="about-text">
                     <p>
-                        Bonjour ! Je suis Aityum, étudiant en deuxième année de BUT Informatique à l'IUT2 de Grenoble.
-                        Ma passion pour le développement web m'a conduit à créer plusieurs projets personnels,
-                        notamment un site immersif pour mon serveur de jeu de rôle "Arzmania".
+                        Bonjour ! Je suis Aiman, étudiant en deuxième année de BUT Informatique à l'IUT2 de Grenoble.
+                        Je m'intéresse aussi bien au développement web qu'à l'administration système et réseau,
+                        avec une préférence pour les projets où je peux mettre les mains dans le concret,
+                        de la conception à la mise en production.
                     </p>
                     <p>
-                        Je suis passionné par le développement web et la programmation, avec une expérience pratique
-                        dans plusieurs langages
-                        et technologies. J'ai effectué un stage chez ACS INFORMATIQUE où j'ai travaillé sur le dépannage
-                        informatique et
-                        la configuration de serveurs.
+                        J'aime comprendre comment les choses fonctionnent en profondeur, que ce soit en développant
+                        une application, en configurant une infrastructure ou en résolvant un problème technique.
+                        Cette curiosité m'a amené à toucher à plusieurs domaines : développement, réseaux, systèmes
+                        et gestion de projet.
                     </p>
                     <p>
-                        Au-delà de l'informatique, je suis très investi dans la communauté de jeu de rôle, où je gère un
-                        serveur
-                        medieval-fantasy. Je combine mes compétences techniques et ma créativité pour créer des
-                        expériences
+                        À côté de mes études, je gère également un projet personnel créatif de longue haleine,
+                        où je combine compétences techniques et créativité pour construire des expériences
                         immersives et engageantes.
                     </p>
                 </div>
@@ -78,8 +76,8 @@
                     </div>
 
                     <div class="stat-card">
-                        <div class="stat-number">Stage</div>
-                        <div class="stat-label">ACS INFORMATIQUE</div>
+                        <div class="stat-number">CCNA</div>
+                        <div class="stat-label">1</div>
                     </div>
                 </div>
             </div>
@@ -201,19 +199,21 @@
                     </div>
                 </div>
 
-                <div class="project-card" onclick="openModal('phpapps')">
+                <div class="project-card" onclick="openModal('parcit')">
                     <div class="project-header">
-                        <h3>Applications Web PHP</h3>
+                        <h3>Parc-IT — Gestion du parc informatique</h3>
                     </div>
                     <div class="project-body">
                         <p class="project-description">
-                            Collection d'applications incluant simulateurs de dés, calculatrices,
-                            et générateurs de contenu dynamique pour améliorer mes compétences en PHP.
+                            Outil web interne développé durant mon stage au service informatique d'une grande
+                            université française pour gérer, localiser et suivre le parc informatique
+                            réparti sur plus de 30 bâtiments du campus.
                         </p>
                         <div class="project-tech">
                             <span class="tech-tag">PHP</span>
-                            <span class="tech-tag">HTML/CSS</span>
-                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">LDAP</span>
+                            <span class="tech-tag">API REST</span>
+                            <span class="tech-tag">Cartographie</span>
                         </div>
                     </div>
                 </div>
@@ -359,45 +359,71 @@
             </div>
         </div>
 
-        <div id="phpapps" class="modal">
+        <div id="parcit" class="modal">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h2>Applications Web PHP</h2>
-                    <span class="close" onclick="closeModal('phpapps')">&times;</span>
+                    <h2>Parc-IT — Gestion du parc informatique</h2>
+                    <span class="close" onclick="closeModal('parcit')">&times;</span>
                 </div>
                 <div class="modal-body">
                     <div class="modal-section">
                         <h3><i class="fas fa-info-circle"></i> Description</h3>
                         <p>
-                            Collection d'applications web développées en PHP dans le cadre de mon apprentissage
-                            et de mon perfectionnement. Chaque application représente un défi technique différent
-                            et m'a permis d'approfondir mes compétences en développement backend.
+                            Parc-IT est un outil web interne développé durant mon stage de 2ème année de BUT
+                            Informatique au sein du service informatique d'une grande université française.
+                            L'application permet aux techniciens de gérer, localiser et suivre l'ensemble du
+                            parc informatique réparti sur plus de 30 bâtiments du campus.
                         </p>
                     </div>
 
                     <div class="modal-section">
-                        <h3><i class="fas fa-list"></i> Applications développées</h3>
+                        <h3><i class="fas fa-user-cog"></i> Mon rôle</h3>
                         <ul>
-                            <li>Simulateur de dés pour jeux de rôle avec statistiques</li>
-                            <li>Calculatrice avancée avec opérations complexes et historique</li>
-                            <li>Générateur de contenu dynamique pour le roleplay</li>
-                            <li>Système de gestion CRUD avec base de données</li>
-                            <li>Mini-CMS pour gestion de contenu simplifiée</li>
+                            <li>Développeur fullstack — conception et développement de A à Z</li>
+                            <li>Analyse des besoins terrain avec le tuteur</li>
+                            <li>Rédaction du cahier des charges</li>
+                            <li>Intégration à l'infrastructure réseau existante (LDAP, Netdisco)</li>
+                        </ul>
+                    </div>
+
+                    <div class="modal-section">
+                        <h3><i class="fas fa-list"></i> Fonctionnalités principales</h3>
+                        <ul>
+                            <li>Tableau de bord avec statistiques en temps réel par état de machine</li>
+                            <li>CRUD complet avec recherche, filtres, pagination et autocomplétion</li>
+                            <li>Carte interactive des bâtiments (Leaflet / OpenStreetMap) avec marqueurs dynamiques</li>
+                            <li>Authentification via Active Directory (LDAP over TLS)</li>
+                            <li>Intégration API REST Netdisco — enrichissement automatique des fiches (IP, VLAN,
+                                switch, fabricant)</li>
+                            <li>Suivi des prêts de PC avec calendrier FullCalendar interactif</li>
+                            <li>Import CSV compatible exports GLPI</li>
+                            <li>Mode jour / nuit</li>
                         </ul>
                     </div>
 
                     <div class="modal-section">
                         <h3><i class="fas fa-code"></i> Technologies utilisées</h3>
                         <ul>
-                            <li>PHP 7+ avec programmation orientée objet</li>
-                            <li>MySQL pour la persistance des données</li>
-                            <li>HTML5/CSS3 pour l'interface</li>
-                            <li>JavaScript pour l'interactivité</li>
-                            <li>AJAX pour les requêtes asynchrones</li>
+                            <li>HTML / CSS / JavaScript vanilla (sans framework)</li>
+                            <li>PHP 8.4 — API REST backend</li>
+                            <li>SQLite — base de données légère sans serveur dédié</li>
+                            <li>Leaflet + OpenStreetMap — cartographie open source</li>
+                            <li>LDAP / Active Directory — authentification entreprise</li>
+                            <li>API REST Netdisco — données réseau temps réel</li>
+                            <li>FullCalendar — calendrier interactif</li>
+                            <li>Chiffrement AES-256 en session</li>
                         </ul>
                     </div>
 
-
+                    <div class="project-links">
+                        <a href="https://docs.google.com/document/d/12T9hsk3xCBxK6tuUe8vWR6JXqf9jgE1Vsy8y766K1ps/edit?usp=sharing"
+                            class="project-link" target="_blank">
+                            <i class="fas fa-file-alt"></i> Cahier des charges
+                        </a>
+                        <a href="https://github.com/Aityum-dev/Parc-IT" class="project-link" target="_blank">
+                            <i class="fab fa-github"></i> Voir sur GitHub
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -409,7 +435,7 @@
                     <div class="timeline-dot"></div>
                     <div class="timeline-content">
                         <div class="timeline-date">
-                            <i class="fas fa-calendar-alt"></i> 2023 - Présent
+                            <i class="fas fa-calendar-alt"></i> 2025 - Présent
                         </div>
                         <h3 class="timeline-title">
                             <i class="fas fa-graduation-cap"></i> BUT Informatique
@@ -430,7 +456,7 @@
                     <div class="timeline-dot"></div>
                     <div class="timeline-content">
                         <div class="timeline-date">
-                            <i class="fas fa-calendar-alt"></i> 2021 - 2023
+                            <i class="fas fa-calendar-alt"></i> 2023 - 2025
                         </div>
                         <h3 class="timeline-title">
                             <i class="fas fa-graduation-cap"></i> BTS CIEL
@@ -450,7 +476,7 @@
                     <div class="timeline-dot"></div>
                     <div class="timeline-content">
                         <div class="timeline-date">
-                            <i class="fas fa-calendar-alt"></i> Avant 2021
+                            <i class="fas fa-calendar-alt"></i> 2020 - 2023
                         </div>
                         <h3 class="timeline-title">
                             <i class="fas fa-graduation-cap"></i> Bac Professionnel
@@ -541,7 +567,7 @@
 
     <footer>
         <div class="container">
-            <p>&copy; 2026 Aityum - Tous droits réservés</p>
+            <p>&copy; 2026 Aiman - Tous droits réservés</p>
             <p style="margin-top: 0.5rem; font-size: 0.9rem;">
                 Étudiant en BUT Informatique à l'IUT2 Grenoble
             </p>
